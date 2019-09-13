@@ -8,5 +8,5 @@
 
 import Foundation
 protocol HouseDetailActionDelegate{
-    func onClickHouseDetails()
+    func onClickHouseDetails(objHouse: HouseVO)
 }

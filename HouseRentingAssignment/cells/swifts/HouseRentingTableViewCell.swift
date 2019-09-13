@@ -34,9 +34,8 @@ class HouseRentingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         self.selectionStyle = .none
-     //   initGestureRecognizer()
+        initGestureRecognizer()
         vPrice.layer.cornerRadius = 15
         vMain.layer.cornerRadius = 10
         ivHousePoster.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
@@ -45,8 +44,6 @@ class HouseRentingTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     func initGestureRecognizer(){
@@ -56,6 +53,6 @@ class HouseRentingTableViewCell: UITableViewCell {
     }
     
     @objc func onclickViewDetails(){
-        delegate?.onClickHouseDetails()
+        delegate?.onClickHouseDetails(objHouse: house!)
     }
 }
