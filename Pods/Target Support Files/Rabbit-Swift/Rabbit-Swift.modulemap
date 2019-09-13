@@ -1,0 +1,6 @@
+framework module Rabbit_Swift {
+  umbrella header "Rabbit-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
