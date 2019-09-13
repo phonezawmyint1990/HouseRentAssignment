@@ -36,7 +36,7 @@ class HouseRentingTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.selectionStyle = .none
-        initGestureRecognizer()
+     //   initGestureRecognizer()
         vPrice.layer.cornerRadius = 15
         vMain.layer.cornerRadius = 10
         ivHousePoster.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]

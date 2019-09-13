@@ -28,16 +28,18 @@ class HouseDetailsViewController: UIViewController {
         btnSeePhotos.layer.cornerRadius = 20
         btnAddFavorite.layer.cornerRadius = 20
         btnBookNow.layer.cornerRadius = 20
-        btnSeePhotos.layer.borderWidth = 2
-        btnSeePhotos.layer.borderColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        btnSeePhotos.layer.borderWidth = 1
+        btnSeePhotos.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
-        let posterString = house?.house_image_url ?? ""
-        ivHousePoster.sd_setImage(with: URL(string: posterString), placeholderImage: UIImage(named: "img_house"))
-        lblPrice.text = "$ \(house?.price)"
-        lblAddress.text = house?.address
-        lblSquareFeet.text = "\(house?.square_feet)"
-        lblName.text = house?.name?.toMMFont()
-        lblDescription.text = house?.description?.toMMFont()
+        if let house = house {
+            let posterString = house.house_image_url ?? ""
+            ivHousePoster.sd_setImage(with: URL(string: posterString), placeholderImage: UIImage(named: "img_house"))
+            lblPrice.text = "$ \(house.price!)"
+            lblAddress.text = house.address
+            lblSquareFeet.text = "\(house.square_feet!)"
+            lblName.text = house.name?.toMMFont()
+            lblDescription.text = house.description?.toMMFont()
+        }
     }
     
     @IBAction func btnBackAction(_ sender: Any) {

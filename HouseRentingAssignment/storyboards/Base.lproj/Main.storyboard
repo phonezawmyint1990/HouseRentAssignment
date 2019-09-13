@@ -339,7 +339,7 @@
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qs2-4b-tfa">
                                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="1"/>
-                                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="Onm-wR-XAg"/>
                                                                 </constraints>
@@ -466,7 +466,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="63D-c6-2zv" secondAttribute="trailing" constant="20" id="2ao-6Z-n0O"/>
                                             <constraint firstItem="Xlu-op-KrY" firstAttribute="leading" secondItem="awM-PT-FNv" secondAttribute="leading" id="5hF-c6-znk"/>

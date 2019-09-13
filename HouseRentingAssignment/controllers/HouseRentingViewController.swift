@@ -60,7 +60,7 @@ extension HouseRentingViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing:  HouseRentingTableViewCell.self), for: indexPath) as! HouseRentingTableViewCell
         cell.house = HouseModel.shared().houseRespone?.data?[indexPath.row]
-        cell.delegate = self
+      //  cell.delegate = self
         return cell
     }
 }
@@ -68,14 +68,18 @@ extension HouseRentingViewController: UITableViewDataSource{
 extension HouseRentingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+                let storboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storboard.instantiateViewController(withIdentifier: String(describing: HouseDetailsViewController.self)) as! HouseDetailsViewController
+                vc.house = HouseModel.shared().houseRespone?.data?[indexPath.row]
+                self.present(vc, animated: true, completion: nil)
     }
 }
 
-extension HouseRentingViewController: HouseDetailActionDelegate {
-    func onClickHouseDetails() {
-        let storboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storboard.instantiateViewController(withIdentifier: String(describing: HouseDetailsViewController.self)) as! HouseDetailsViewController
-        vc.house = self.houseVO
-        self.present(vc, animated: true, completion: nil)
-    }
-}
+//extension HouseRentingViewController: HouseDetailActionDelegate {
+//    func onClickHouseDetails() {
+//        let storboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storboard.instantiateViewController(withIdentifier: String(describing: HouseDetailsViewController.self)) as! HouseDetailsViewController
+//        vc.house = self.houseVO
+//        self.present(vc, animated: true, completion: nil)
+//    }
+//}

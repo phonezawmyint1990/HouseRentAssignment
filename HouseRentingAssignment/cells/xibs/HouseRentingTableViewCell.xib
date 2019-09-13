@@ -112,6 +112,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="NtO-Gt-J5c" firstAttribute="leading" secondItem="dHY-Ma-lRw" secondAttribute="leading" id="2dz-VB-3cm"/>
                             <constraint firstItem="u5q-nd-Vr5" firstAttribute="top" secondItem="NtO-Gt-J5c" secondAttribute="bottom" constant="5" id="45y-0u-dYp"/>
