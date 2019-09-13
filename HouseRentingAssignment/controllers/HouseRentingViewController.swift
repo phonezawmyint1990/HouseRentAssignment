@@ -27,6 +27,7 @@ class HouseRentingViewController: BaseViewController {
         refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         houseRentingTableView.addSubview(refreshControl)
         vTopCollection.layer.cornerRadius = vTopCollection.frame.width/2
+        houseRentingTableView.rowHeight = 300
     }
     
     @objc func onRefresh(){
