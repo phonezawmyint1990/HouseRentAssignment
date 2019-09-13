@@ -68,7 +68,6 @@ extension HouseRentingViewController: UITableViewDataSource{
 
 extension HouseRentingViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
                 let storboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storboard.instantiateViewController(withIdentifier: String(describing: HouseDetailsViewController.self)) as! HouseDetailsViewController
                 vc.house = HouseModel.shared().houseRespone?.data?[indexPath.row]
