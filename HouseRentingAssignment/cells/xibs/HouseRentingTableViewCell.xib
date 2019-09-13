@@ -52,13 +52,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="140" height="28"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_img_square" translatesAutoresizingMaskIntoConstraints="NO" id="EJU-gU-oyg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="28"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="28"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="40" id="QyH-Ng-oRH"/>
+                                                            <constraint firstAttribute="width" constant="20" id="QyH-Ng-oRH"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3200 sqft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcE-Nk-Gns">
-                                                        <rect key="frame" x="45" y="0.0" width="95" height="28"/>
+                                                        <rect key="frame" x="25" y="0.0" width="115" height="28"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -69,13 +69,13 @@
                                                 <rect key="frame" x="140" y="0.0" width="140" height="28"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_img_bed" translatesAutoresizingMaskIntoConstraints="NO" id="8dU-zf-klC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="28"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="28"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="40" id="00A-ew-8ri"/>
+                                                            <constraint firstAttribute="width" constant="20" id="00A-ew-8ri"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 bedooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovT-eo-vjT">
-                                                        <rect key="frame" x="45" y="0.0" width="95" height="28"/>
+                                                        <rect key="frame" x="25" y="0.0" width="115" height="28"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
