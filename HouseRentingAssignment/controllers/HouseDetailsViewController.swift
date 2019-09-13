@@ -31,6 +31,16 @@ class HouseDetailsViewController: UIViewController {
         btnSeePhotos.layer.borderWidth = 1
         btnSeePhotos.layer.borderColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
+        btnAddFavorite.layer.shadowColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        btnAddFavorite.layer.shadowOpacity = 1
+        btnAddFavorite.layer.shadowOffset = .zero
+        btnAddFavorite.layer.shadowRadius = 50
+        
+        btnBookNow.layer.shadowColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        btnBookNow.layer.shadowOpacity = 1
+        btnBookNow.layer.shadowOffset = .zero
+        btnBookNow.layer.shadowRadius = 50
+        
         if let house = house {
             let posterString = house.house_image_url ?? ""
             ivHousePoster.sd_setImage(with: URL(string: posterString), placeholderImage: UIImage(named: "img_house"))
