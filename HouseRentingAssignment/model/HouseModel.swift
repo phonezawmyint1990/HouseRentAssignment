@@ -18,25 +18,6 @@ class HouseModel {
     }()
     
     var houseRespone: HouseResponse?
-    
-    
-    
-//    func apiGetHouseRentingList(success:@escaping() -> Void, failure:@escaping(String) -> Void){
-//        NetworkClient.shared().getData(success: { (data) in
-//            guard let data = data as? Data else {return}
-//            do{
-//                let decoder = JSONDecoder()
-//                decoder.keyDecodingStrategy = .convertFromSnakeCase
-//                self.houseRespone = try decoder.decode(HouseResponse.self, from: data)
-//                success()
-//            }catch let jsonErr {
-//                failure(jsonErr.localizedDescription)
-//            }
-//        }) { (err) in
-//            failure(err)
-//        }
-//    }
-    
     func apiGetHouseRentingList(success:@escaping()-> Void, failure:@escaping(String) -> Void){
         NetworkClient.shared().getData(success: { (data) in
             guard let data = data as? Data else {return}

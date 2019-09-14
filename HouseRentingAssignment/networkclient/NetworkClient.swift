@@ -23,20 +23,6 @@ class NetworkClient {
       return sharedNetworkClient
     }
     
-//    public func getData(success:@escaping(Any) -> Void, failure:@escaping(String) ->Void){
-//        Alamofire.request(baseUrl).responseData { (response) in
-//            switch response.result {
-//            case .success:
-//                guard let data = response.result.value else {return}
-//                success(data)
-//                break
-//            case .failure (let err):
-//                failure(err.localizedDescription)
-//                break
-//            }
-//        }
-//    }
-    
     public func getData(success:@escaping(Any) -> Void,failure:@escaping(String)-> Void){
         Alamofire.request(baseUrl).responseData { (response) in
             switch response.result {

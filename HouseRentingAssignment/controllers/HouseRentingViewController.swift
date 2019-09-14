@@ -71,7 +71,7 @@ extension HouseRentingViewController: HouseDetailActionDelegate {
     func onClickHouseDetails(objHouse: HouseVO) {
                 let storboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storboard.instantiateViewController(withIdentifier: String(describing: HouseDetailsViewController.self)) as! HouseDetailsViewController
-                vc.house = objHouse
+                        vc.house = objHouse
                 self.present(vc, animated: true, completion: nil)
     }
 }
