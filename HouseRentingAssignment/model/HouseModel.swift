@@ -25,7 +25,6 @@ class HouseModel {
                // let decoder = JSONDecoder()
                // decoder.keyDecodingStrategy = .convertFromSnakeCase
                 self.houseRespone = try JSONDecoder().decode(HouseResponse.self, from: data)
-                print(self.houseRespone?.data)
                 success()
             }catch let jsonerr {
                 failure(jsonerr.localizedDescription)
