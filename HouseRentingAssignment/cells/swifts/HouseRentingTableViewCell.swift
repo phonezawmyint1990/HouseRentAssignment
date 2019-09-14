@@ -56,7 +56,7 @@ class HouseRentingTableViewCell: UITableViewCell {
         if let house = house {
             delegate?.onClickHouseDetails(objHouse: house)
         }else{
-            delegate?.onClickHouseDetails(objHouse: HouseVO(id: 1, house_image_url: "", name: "Golden Gate Tower", description: "ပုုဇြန္ေတာင္ေစ်းအနီး၊ စာတိုုက္မွတ္တိုုင္နားတြင္ရွိသည္။", price: 1200, address: "Pazadaung Township", square_feet: 1200, latitude: 123.34, longitude: 1123.2312))
+            delegate?.onClickHouseDetails(objHouse: HouseVO(id: 1, house_image_url: "", name: "Golden Gate Tower", description: "Good Tower of Pazadaung Township", price: 1200, address: "Pazadaung Township", square_feet: 1200, latitude: 123.34, longitude: 1123.2312))
         }
         
     }
