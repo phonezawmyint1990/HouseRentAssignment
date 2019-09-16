@@ -14,6 +14,13 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    func showAlertDialog(message:String){
+        let alert = UIAlertController(title: "Failed", message: message, preferredStyle: UIAlertController.Style.alert)
+        let alertActoion = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+        alert.addAction(alertActoion)
+        present(alert, animated: true, completion: nil)
+    }
 
 }
 

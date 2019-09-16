@@ -46,7 +46,7 @@ class HouseDetailsViewController: UIViewController {
             ivHousePoster.sd_setImage(with: URL(string: posterString), placeholderImage: UIImage(named: "img_house"))
             lblPrice.text = "$ \(house.price!)"
             lblAddress.text = house.address
-            lblSquareFeet.text = "\(house.square_feet!)"
+            lblSquareFeet.text = "\(house.square_feet!) sqft"
             lblName.text = house.name?.toMMFont()
             lblDescription.text = house.description?.toMMFont()
         }

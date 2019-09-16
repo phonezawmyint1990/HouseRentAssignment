@@ -18,6 +18,7 @@
 		FB155D2C232954B8005C6AB2 /* HouseRentingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB155D2A232954B8005C6AB2 /* HouseRentingTableViewCell.xib */; };
 		FB155D2F23296498005C6AB2 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB155D2E23296498005C6AB2 /* Extension.swift */; };
 		FB155D3123296996005C6AB2 /* HouseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB155D3023296996005C6AB2 /* HouseDetailsViewController.swift */; };
+		FB80C496232E3A0600FD0690 /* ErrorVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB80C495232E3A0600FD0690 /* ErrorVO.swift */; };
 		FBBDA0DF2328E47300423A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDA0DE2328E47300423A93 /* AppDelegate.swift */; };
 		FBBDA0E42328E47300423A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBDA0E22328E47300423A93 /* Main.storyboard */; };
 		FBBDA0E62328E47300423A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBDA0E52328E47300423A93 /* Assets.xcassets */; };
@@ -26,6 +27,8 @@
 		FBFACCCE232AAA5500A8DAB3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFACCCD232AAA5500A8DAB3 /* BaseViewController.swift */; };
 		FBFACCD0232AC5A400A8DAB3 /* MDetect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFACCCF232AC5A400A8DAB3 /* MDetect.swift */; };
 		FBFACCD2232AC62A00A8DAB3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFACCD1232AC62A00A8DAB3 /* AppConstants.swift */; };
+		FBFF5799232CF29C00DF16C2 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF5798232CF29C00DF16C2 /* BaseResponse.swift */; };
+		FBFF579B232D04CB00DF16C2 /* HouseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFF579A232D04CB00DF16C2 /* HouseRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,7 @@
 		FB155D2A232954B8005C6AB2 /* HouseRentingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseRentingTableViewCell.xib; sourceTree = "<group>"; };
 		FB155D2E23296498005C6AB2 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FB155D3023296996005C6AB2 /* HouseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailsViewController.swift; sourceTree = "<group>"; };
+		FB80C495232E3A0600FD0690 /* ErrorVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorVO.swift; sourceTree = "<group>"; };
 		FBBDA0DB2328E47300423A93 /* HouseRentingAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseRentingAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBDA0DE2328E47300423A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBBDA0E32328E47300423A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		FBFACCCD232AAA5500A8DAB3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FBFACCCF232AC5A400A8DAB3 /* MDetect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDetect.swift; sourceTree = "<group>"; };
 		FBFACCD1232AC62A00A8DAB3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		FBFF5798232CF29C00DF16C2 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		FBFF579A232D04CB00DF16C2 /* HouseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FB13467A2329E4E90010D264 /* HouseVO.swift */,
+				FBFF579A232D04CB00DF16C2 /* HouseRequest.swift */,
 			);
 			path = request;
 			sourceTree = "<group>";
@@ -104,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				FB13467C2329EC510010D264 /* HouseResponse.swift */,
+				FBFF5798232CF29C00DF16C2 /* BaseResponse.swift */,
+				FB80C495232E3A0600FD0690 /* ErrorVO.swift */,
 			);
 			path = response;
 			sourceTree = "<group>";
@@ -339,15 +348,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFF5799232CF29C00DF16C2 /* BaseResponse.swift in Sources */,
 				FBFACCCE232AAA5500A8DAB3 /* BaseViewController.swift in Sources */,
 				FB1346762329E25F0010D264 /* SharedConstants.swift in Sources */,
 				FB1346802329ED110010D264 /* NetworkClient.swift in Sources */,
 				FB13467B2329E4E90010D264 /* HouseVO.swift in Sources */,
 				FBFACCD2232AC62A00A8DAB3 /* AppConstants.swift in Sources */,
+				FB80C496232E3A0600FD0690 /* ErrorVO.swift in Sources */,
 				FBFACCD0232AC5A400A8DAB3 /* MDetect.swift in Sources */,
 				FB155D2F23296498005C6AB2 /* Extension.swift in Sources */,
 				FB155D2B232954B8005C6AB2 /* HouseRentingTableViewCell.swift in Sources */,
 				FB1346832329FA730010D264 /* HouseModel.swift in Sources */,
+				FBFF579B232D04CB00DF16C2 /* HouseRequest.swift in Sources */,
 				FBFACCCC232AA82F00A8DAB3 /* HouseDetailActionDelegate.swift in Sources */,
 				FB155D3123296996005C6AB2 /* HouseDetailsViewController.swift in Sources */,
 				FB13467D2329EC510010D264 /* HouseResponse.swift in Sources */,

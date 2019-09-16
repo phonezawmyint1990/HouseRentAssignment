@@ -7,7 +7,8 @@ target 'HouseRentingAssignment' do
 
   # Pods for HouseRentingAssignment
 	pod 'SDWebImage'
-  	pod 'Alamofire'
-  	pod 'NVActivityIndicatorView'
+  pod 'Alamofire'
+  pod 'NVActivityIndicatorView'
 	pod 'Rabbit-Swift'
+  pod 'SwiftyJSON'
 end

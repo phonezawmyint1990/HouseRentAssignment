@@ -7,12 +7,14 @@ PODS:
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - NVActivityIndicatorView
   - Rabbit-Swift
   - SDWebImage
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -20,13 +22,15 @@ SPEC REPOS:
     - NVActivityIndicatorView
     - Rabbit-Swift
     - SDWebImage
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
   Rabbit-Swift: a8f88f3d87ff2e60cad83a86f9e5c55620b2d742
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 6dca1309c0c61b6c4015b4e74fc3923f3632f9d1
+PODFILE CHECKSUM: dc7461a1579ee2dfece5723415a574f1be8f596e
 
 COCOAPODS: 1.7.5

@@ -26,6 +26,27 @@ class HouseRentingViewController: BaseViewController {
         houseRentingTableView.addSubview(refreshControl)
         vTopCollection.layer.cornerRadius = vTopCollection.frame.width/2
         houseRentingTableView.rowHeight = 300
+        
+//        HouseModel.shared().apiGetHouseById(houseId: 1, success: {
+//            let tt = HouseModel.shared().house
+//            print("tt",tt)
+//        }) { (err) in
+//            print(err)
+//        }
+//
+//        HouseModel.shared().apiGetHouseByIdWithFormData(houseId: 1, success: {
+//            let ss = HouseModel.shared().house
+//            print("ss",ss)
+//        }) { (err) in
+//            print(err)
+//        }
+//
+//        HouseModel.shared().apiGetHouseByIdWithRequestObject(houseRequest: HouseRequest(houseId: 1), success: {
+//            let pp = HouseModel.shared().house
+//            print("pp",pp)
+//        }) { (err) in
+//            print(err)
+//        }
     }
     
     @objc func onRefresh(){
@@ -43,7 +64,8 @@ class HouseRentingViewController: BaseViewController {
         }) { (err) in
             self.hideProgress()
             self.refreshControl.endRefreshing()
-            print(err)
+           // print(err)
+            self.showAlertDialog(message: err)
         }
     }
 }
